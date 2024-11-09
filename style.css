@@ -1,0 +1,153 @@
+html{
+    scroll-behavior: smooth;
+}
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+body{
+    font-family: "Outfit";
+    background-color: #fae8f5;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.Contenedor{
+    background-color: #fae8f5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenido{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+p{  
+    font-size: 16px;
+    color: black;
+}
+
+h1{
+    color: black;
+    text-align: left;
+    font-size: 35px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2{
+    font-size: 28px;
+    color: rgb(131, 55, 2);
+    text-align: left;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 30px;
+}
+
+h3{ 
+    color: rgb(150, 0, 92);
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Cambia el color de los puntos de la lista */
+ul li::marker {
+    color: rgb(97, 2, 60); /* Color del punto */
+    font-size: 16px; /* Ajusta el tamaño del punto */
+}
+
+ol li::marker {
+    color: rgb(97, 2, 60); /* Color del punto de la lista*/
+    font-size: 16px; /* Ajusta el tamaño del punto */
+}
+
+ul li{
+    line-height: 2.0;  /* Ajusta la altura de línea para aumentar la separación */
+}
+
+table td {
+    text-align: center;
+    padding: 18px 115px; /* Añade espacio alrededor del contenido de cada celda (abajo / derecha) respectivamente*/
+    border-bottom: 2px solid #ddd; /* Línea inferior para separar filas */
+}
+
+/* Media Queries para pantallas móviles (hasta 375px de ancho) */
+@media (max-width: 375px) {
+    .contenido {
+        max-width: 100%; /* Usa todo el ancho de la pantalla */
+        padding: 15px;
+        margin: 10px;  /* Reduce los márgenes en móviles */
+    }
+    
+    h1 {
+        font-size: 28px; /* Reduce el tamaño del texto */
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p, ul li {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+
+    table td {
+        padding: 12px 40px; /* Ajusta el padding para que la tabla sea más compacta en móviles */
+    }
+}
+
+/* Media Queries para pantallas de escritorio (hasta 1440px de ancho) */
+@media (min-width: 1440px) {
+    .contenido {
+        max-width: 900px; /* Ensancha el contenedor para pantallas grandes */
+        padding: 40px;  /* Aumenta el padding */
+    }
+
+    h1 {
+        font-size: 45px; /* Aumenta el tamaño del texto */
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    p, ul li {
+        font-size: 18px; /* Aumenta el tamaño de la fuente */
+    }
+
+    table td {
+        padding: 20px 150px; /* Aumenta el espacio dentro de las celdas en pantallas grandes */
+    }
+}
